@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./bin/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "lib": [ "es2015", "dom" ],
+        "sourceRoot": "./Application"
+    },
+    "include": [
+        "./Application/**/*"
+    ]
+}

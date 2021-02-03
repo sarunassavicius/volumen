@@ -1,0 +1,80 @@
+﻿@import "../../node_modules/handsontable/dist/handsontable.full.css";
+@import "colors";
+@import "top-menu";
+@import "tab-panel";
+@import "common";
+@import "loader";
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../../Assets/Fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  }
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 13px;
+    color: $fontColor;
+}
+
+h1 {
+    margin: 0;
+}
+
+#application {
+    width: 100%;
+    height: 100%;
+}
+
+.application-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.sheet-container {
+    flex-grow: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.value-editor-container {
+    min-height: 70px;
+    background-color: $borderColor;
+    border-left: 1px solid $panelBackgroundColor;
+    border-top: 1px solid $panelBackgroundColor;
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        resize: none;
+        flex-grow: 1
+    }
+
+    .right-border {
+        height: 71px;
+        width: 1px;
+        position: fixed;
+        background-color: $panelBackgroundColor;
+        top: 45px;
+        right: 0;
+    }
+
+    .resizable-area {
+        cursor: ns-resize;
+        height: 10px;
+    }
+}

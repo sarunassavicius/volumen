@@ -1,0 +1,26 @@
+@import "colors";
+@import "common";
+@import "modal";
+
+.modal-container {
+    .modal {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 350px;
+        box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.05);
+
+        &.input-window {
+            width: 400px;
+            height: 110px;
+        }
+
+        .modal-body {
+            .control-container {
+                .control {
+                    min-width: 46px;
+                }
+            }
+        }
+    }
+}
